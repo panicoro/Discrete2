@@ -4,7 +4,6 @@
  * @author: Verónica Leaño, Pablo Nicolás Rosa.
  */
 
-//#include "Info.h"
 #include "Ordenacion.h"
 #include "Rii.h"
 #include "U32ToString.h"
@@ -12,43 +11,8 @@
 #include <time.h>
 
 
-/*void imprimir(Grafo G ){
-    for (u32 i = 0; i < G->infoGrafo[Vertices];i++){
-        u32 x = G->array_vertices[G->array_orden_vertices[i]]
-                .infoVertice[Nombre];
-        printf("\nEl vertice de la posicion %u es %u\n ",i,x);
-    }  
-    //GradodelVertice(G,i); 
-}*/
-
-void imprimir_color(Grafo G ){
-    for (u32 i = 0; i < G->infoGrafo[Vertices];i++){
-        u32 x = G->array_vertices[G->array_orden_vertices[i]]
-                .infoVertice[Nombre];
-        printf("El vertice de la posicion %u es %u\n ",i,x);
-        u32 y = G->array_vertices[G->array_orden_vertices[i]].infoVertice[Color];
-        printf("El color de ete vertice es: %u\n", y);
-    }  
-    //GradodelVertice(G,i); 
-}
-
-void imprimir_2(Grafo G ){
-    for (u32 i = 0; i < G->infoGrafo[Vertices];i++){
-        u32 x = G->array_vertices[G->array_orden_vertices[i]]
-                .infoVertice[Color];
-        u32 y = G->array_vertices[G->array_orden_vertices[i]]
-                .infoVertice[Nombre];
-        printf("La posicion %u pertenece al vertice %u su color es es %u\n ",i,y,x);
-    }  
-    //GradodelVertice(G,i); 
-}
 
 int main(int argc, char *argv[]){
-    /*u32 chi,  // Menor cantidad de colores de todas las ejecuciónes de Greedy.
-        cantColores, // Contador de colores, puede variar si utilizo numeros aleotorios.
-        num_colores, // Cantidad de colores que tiene el grafo original.
-        //num_vertices, // Cantidad de vertices que tiene un grafo.
-        num_iteraciones,* // Cantidad de iteraciones ingresada por stdin.
         u32 semilla, num_iteraciones; // Inicializaciion de los números
                                      // aleotorios, ingresada por stdin.
         char error;
